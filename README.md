@@ -3,6 +3,6 @@ This website shows the discography and background information of the BeeGees whi
 
 References:
 
-> BeeGees logo: https://www.freelogovectors.net/bee-gees-logo/\n
-> BeeGees image in hero section: https://www.last.fm/music/Bee+Gees\n
-> About section on the BeeGees: https://en.wikipedia.org/wiki/Bee_Gees\n
+> BeeGees logo: https://www.freelogovectors.net/bee-gees-logo/ \n
+> BeeGees image in hero section: https://www.last.fm/music/Bee+Gees \n
+> About section on the BeeGees: https://en.wikipedia.org/wiki/Bee_Gees \n
