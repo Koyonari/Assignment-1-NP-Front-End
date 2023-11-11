@@ -3,8 +3,6 @@ This website shows the discography and background information of the BeeGees whi
 
 References:
 
-> BeeGees logo: https://www.freelogovectors.net/bee-gees-logo/
+> Kessoku Band logo and in hero section: https://www.reddit.com/r/BocchiTheRock/comments/13quymr/how_i_think_kessoku_bands_colored_logo_should/?rdt=39987
 >
-> BeeGees image in hero section: https://www.last.fm/music/Bee+Gees
->
-> About section on the BeeGees: https://en.wikipedia.org/wiki/Bee_Gee
+> About section on the Kessoku Band: https://en.wikipedia.org/wiki/Kessoku_Band_(album)
