@@ -24,11 +24,13 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--bg-color);
+    height: 100%;
 }
 
 body {
     margin: 0;
     font-family: "Noto Sans", sans-serif;
+    height: 100%;
 }
 
 ul {
@@ -41,11 +43,18 @@ a {
 }
 
 /* Parallax scrolling effect starts */
-.wrapper {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
+.parallax {
+    /* The image used */
+    background-image: url('/../assets/kessoku background2.png');
+  
+    /* Full height */
+    height: 30%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 /* Parallax scrolling effect ends */
 
@@ -58,7 +67,7 @@ a {
     background-color: rgb(0, 0, 0);
     color: white;
 }
-  
+
 .flex-container > div {
     background-color: #fdfdfd;
     width: 100px;
@@ -103,6 +112,13 @@ nav ul li {
 }
 /* Navbar section ends */
 
+/*Tours section starts*/
+h2 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
 /* Hero section starts*/
 .hero {
     display: flex;
@@ -126,3 +142,16 @@ nav ul li {
     background-color: rgb(255, 255, 255);
 }
 /* Hero section ends */
+
+/* Scroll up starts */
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+/* Scroll up ends */
