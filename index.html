@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <section id = "home"></section>
   <!-- Navbar -->
   <nav>
       <img src = "assets/kessoku band logo.webp"
@@ -33,23 +34,27 @@
       </button>
   </nav>
 
-  <!-- Hero/About section -->
+  <!-- Tours section-->
   <div class = "parallax"></div>
+  <section class = "tours" id = "tours">
+    <h2>Tours</h2>
+    <div class="image-slider">
+      <img src="assets/liveconcert.jpg" alt="Live 1" id="slider-image">
+      <button class="arrow left-arrow" onclick="changeImage(-1)">&lt;</button>
+      <button class="arrow right-arrow" onclick="changeImage(1)">&gt;</button>
+    </div>
+  </section>
+  </div>
+    
+  <!-- About section -->
+  <section class="hero" id="about">
+    <div class = "parallax"></div>
     <div class="flex-container">
       <div>Ryo Yamada</div>
       <div>Ikuyo Kita</div>
       <div>Hitori Gotoh</div>
       <div>Nijika Ijichi</div>  
     </div>
-  </div>
-
-  <!-- Tours section-->
-  <section class = "tours" id = "tours">
-    <h2>Tours</h2>
-  </section>
-    
-  <!-- About section -->
-  <section class="hero" id="about">
     <img
       src="assets/kessoku band logo.webp"
       alt="kessoku logo"

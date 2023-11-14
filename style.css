@@ -58,6 +58,46 @@ a {
 }
 /* Parallax scrolling effect ends */
 
+/* Tours section starts */
+.image-slider {
+    position: relative;
+    width: auto;
+    height: 50vh;
+    overflow: hidden;
+}
+  
+#slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: black;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+  
+.left-arrow {
+    left: 10px;
+}
+  
+.right-arrow {
+    right: 10px;
+}
+  
+
+/* Tours section ends */
+
 /* Band section starts */
 .flex-container {
     display: flex;
@@ -142,6 +182,71 @@ h2 {
     background-color: rgb(255, 255, 255);
 }
 /* Hero section ends */
+
+/* Support section starts */
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+    color: white;
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px white;
+    background-color: #161616;
+}
+
+.contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset white;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: black;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: red;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+/* Support section ends */
 
 /* Scroll up starts */
 .scroll-up {

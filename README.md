@@ -10,3 +10,7 @@ References:
 > About section on the Kessoku Band: https://en.wikipedia.org/wiki/Kessoku_Band_(album)
 >
 > Discography images: https://bocchi-the-rock.fandom.com/wiki/Bocchi_the_Rock!_(anime)
+>
+> First and second live concert image: https://animecorner.me/bocchi-the-rock-announces-new-live-event-and-single/
+>
+> Third live concert image: https://www.reddit.com/r/BocchiTheRock/comments/13fghg8/band_members_for_kessoku_band_live_kousei/
