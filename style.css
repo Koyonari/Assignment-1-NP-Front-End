@@ -158,6 +158,46 @@ h2 {
     color: white;
     text-decoration: underline;
 }
+/* Tours section ends */
+
+/* Disocography section starts */
+.flex-container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+  
+.flex-container2 > li {
+    background-color: #000000;
+    width: 20%;
+    height:auto;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.flex-item {
+    color: white;
+    font-weight: 500;
+}
+@media screen and (max-width: 292px)
+{
+    .flex-container{
+      flex-wrap: wrap;
+    }
+    .flex-container > li {
+      width: 40%;
+    }
+}
+
+figcaption {
+    color: white;
+    font-style: var(--bold-font);
+    padding: 2px;
+    text-align: center;
+}
+/* Discography section ends */
 
 /* Hero section starts*/
 .hero {
