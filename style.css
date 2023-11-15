@@ -188,13 +188,51 @@ figcaption {
 }
 
 figure {
-    display: flex;
+    display: grid;
+    place-items: center;
+    align-content: center;
     flex-flow: column;
     padding-right:10px;
     padding-left: 10px;
     padding-bottom:  20px;
     max-width: 220px;
     margin: auto;
+}
+
+
+figure:nth-child(2) {
+    transition-delay: 300ms;
+}
+figure:nth-child(3) {
+    transition-delay: 500ms;
+}
+figure:nth-child(4) {
+    transition-delay: 700ms;
+}
+figure:nth-child(5) {
+    transition-delay: 100ms;
+}
+figure:nth-child(6) {
+    transition-delay: 300ms;
+}
+figure:nth-child(7) {
+    transition-delay: 500ms;
+}
+figure:nth-child(8) {
+    transition-delay: 700ms;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 /* Discography section ends */
 
