@@ -29,6 +29,7 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
     font-family: "Noto Sans", sans-serif;
     height: 100%;
 }
@@ -192,33 +193,50 @@ figure {
     place-items: center;
     align-content: center;
     flex-flow: column;
-    padding-right:10px;
-    padding-left: 10px;
-    padding-bottom:  20px;
+    padding-right:25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
     max-width: 220px;
     margin: auto;
+    min-height:200px;
 }
 
+figure img {
+    max-height:100%;
+    width: auto;
+}
 
-figure:nth-child(2) {
+.flex-container2:nth-child(2) {
     transition-delay: 300ms;
 }
-figure:nth-child(3) {
+.flex-container2:nth-child(3) {
     transition-delay: 500ms;
 }
-figure:nth-child(4) {
+.flex-container2:nth-child(4) {
     transition-delay: 700ms;
 }
-figure:nth-child(5) {
+.flex-container2:nth-child(5) {
     transition-delay: 100ms;
 }
-figure:nth-child(6) {
+.flex-container2:nth-child(6) {
     transition-delay: 300ms;
 }
-figure:nth-child(7) {
+.flex-container2:nth-child(7) {
     transition-delay: 500ms;
 }
-figure:nth-child(8) {
+.flex-container2:nth-child(8) {
+    transition-delay: 700ms;
+}
+.flex-container2:nth-child(9) {
+    transition-delay: 100ms;
+}
+.flex-container2:nth-child(10) {
+    transition-delay: 300ms;
+}
+.flex-container2:nth-child(11) {
+    transition-delay: 500ms;
+}
+.flex-container2:nth-child(12) {
     transition-delay: 700ms;
 }
 
