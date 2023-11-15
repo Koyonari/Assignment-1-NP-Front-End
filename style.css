@@ -206,6 +206,7 @@ figure {
 figure img {
     max-height:100%;
     width: auto;
+    aspect-ratio: 1/1;
 }
 
 .flex-container2:nth-child(2) {
@@ -292,6 +293,8 @@ figure img {
 
 #merch .pro img {
     width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
     border-radius:20px;
 }
 
