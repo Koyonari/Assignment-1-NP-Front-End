@@ -2,21 +2,21 @@
 
 /* Variables */
 :root {
-  --font-family: 'Noto Sans', sans-serif;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --bg-color: #000000;
-  --hitori-color: #EEB8C4;
-  --ryo-color: #4061A0;
-  --kita-color: #D0574E ;
-  --nijika-color: #E6D47B;
-  --primary-shadow: #525252;
-  --secondary-shadow: #60f2ff;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
-  --transition: 0.5s;
+    --font-family: 'Noto Sans', sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #000000;
+    --hitori-color: #EEB8C4;
+    --ryo-color: #4061A0;
+    --kita-color: #D0574E ;
+    --nijika-color: #E6D47B;
+    --primary-shadow: #525252;
+    --secondary-shadow: #60f2ff;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.5s;
 }
 /* Variables end */
 
@@ -164,23 +164,9 @@ h2 {
 .flex-container2{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
     justify-content: center;
 }
-  
-.flex-container2 > li {
-    background-color: #000000;
-    width: 20%;
-    height:auto;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-}
-.flex-item {
-    color: white;
-    font-weight: 500;
-}
+
 @media screen and (max-width: 292px)
 {
     .flex-container{
@@ -192,10 +178,23 @@ h2 {
 }
 
 figcaption {
+    background-color: black;
     color: white;
     font-style: var(--bold-font);
-    padding: 2px;
+    padding: 5px;
     text-align: center;
+    height:40px;
+    overflow: hidden;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-bottom:  20px;
+    max-width: 220px;
+    margin: auto;
 }
 /* Discography section ends */
 
@@ -225,13 +224,13 @@ figcaption {
 
 /* Support section starts */
 .contact {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .contact h2 {
-  text-align: center;
-  color: white;
-  margin-bottom: var(--bottom-margin-2);
+    text-align: center;
+    color: white;
+    margin-bottom: var(--bottom-margin-2);
 }
 
 .contact-form-container {
@@ -250,41 +249,48 @@ figcaption {
 }
 
 .contact-form-container textarea {
-  min-height: 6.25rem;
-  font-size: 14px;
+    min-height: 6.25rem;
+    font-size: 14px;
 }
 
 .contact-form-container .input-field {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-  border: 2px outset white;
-  font-size: 0.875rem;
-  outline: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset white;
+    font-size: 0.875rem;
+    outline: none;
 }
 
 .input-field::placeholder {
-  color: black;
+    color: black;
 }
 
 .submit-btn {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #fff;
-  border: 2px solid red;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: var(--bold-font);
-  transition: var(--transition);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
 }
 
 .submit-btn:hover {
-  background-color: red;
-  border: 2px solid var(--primary-color);
-  cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: red;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+    cursor: pointer;
 }
 /* Support section ends */
 
