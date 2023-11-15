@@ -6,6 +6,7 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
+    --color: white;
     --bg-color: #000000;
     --hitori-color: #EEB8C4;
     --ryo-color: #4061A0;
@@ -48,8 +49,8 @@ a {
     /* The image used */
     background-image: url('/../assets/kessoku background2.png');
   
-    /* Full height */
-    height: 30%;
+    /* Height */
+    height: 45%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -121,10 +122,11 @@ a {
 
 /* Navbar section starts*/
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    width: 93%;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -254,6 +256,71 @@ figure img {
 }
 /* Discography section ends */
 
+/* Merch section starts */
+.merch {
+    padding-top: 15px;
+}
+#merch {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#merch .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#merch .pro {
+    width: 20%;
+    min-width: 240px;
+    padding: 10px 12px;
+    border: 3px solid #2b2b2b;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.05);
+    margin: 15px 0;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+#merch .pro:hover {
+    box-shadow: 20px 30px 30px rgba(255, 255, 255, 0.1);
+}
+
+#merch .pro img {
+    width: 100%;
+    border-radius:20px;
+}
+
+#merch .pro .des {
+    padding: 10px 0;
+}
+
+#merch .pro .des h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    text-align:center;
+}
+
+#merch .pro .des h5 {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+#merch .pro .cart {
+    width:35px;
+    object-fit: scale-down;
+    background-color: rgba(111, 111, 111, 0.486);
+    border: 3px solid rgb(224, 224, 224);
+    position: relative;
+}
+/* Merch section ends */
+
 /* Hero section starts*/
 .hero {
     display: flex;
@@ -279,6 +346,10 @@ figure img {
 /* Hero section ends */
 
 /* Support section starts */
+.support {
+    padding-bottom: 50px;
+}
+
 .contact {
     margin-top: 2rem;
 }
