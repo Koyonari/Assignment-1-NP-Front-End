@@ -100,26 +100,6 @@ a {
 
 /* Tours section ends */
 
-/* Band section starts */
-.flex-container {
-    display: flex;
-    min-width: 450px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
-.flex-container > div {
-    background-color: #fdfdfd;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-}
-/* Band section ends */
-
 /* Navbar section starts*/
 nav {
     position: fixed;
@@ -172,10 +152,10 @@ h2 {
 
 @media screen and (max-width: 292px)
 {
-    .flex-container{
+    .flex-container2{
       flex-wrap: wrap;
     }
-    .flex-container > li {
+    .flex-container2 > li {
       width: 40%;
     }
 }
@@ -195,12 +175,28 @@ figure {
     place-items: center;
     align-content: center;
     flex-flow: column;
-    padding-right:25px;
-    padding-left: 25px;
+    padding-right:30px;
+    padding-left: 30px;
     padding-bottom: 20px;
     max-width: 220px;
     margin: auto;
     min-height:200px;
+}
+
+@media screen and (min-aspect-ratio: 16/9)
+{
+    figure {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        flex-flow: column;
+        padding-right:50px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+        max-width: 220px;
+        margin: auto;
+        min-height:200px;
+    }
 }
 
 figure img {
@@ -325,6 +321,24 @@ figure img {
 /* Merch section ends */
 
 /* Hero section starts*/
+.flex-container {
+    display: flex;
+    min-width: 450px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.flex-container > div {
+    background-color: #282828;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -333,17 +347,17 @@ figure img {
     max-width: 68.75rem;
     margin: auto;
 }
-  .hero img {
+.hero img {
     height: 20%;
     width: 20%;
     object-fit: contain;
 }
   
 .bio {
-    width: 550px;
+    width: 40vw;
     padding: 0.625rem;
     border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    box-shadow: 0px 2px 15px 2px white;
     background-color: rgb(255, 255, 255);
 }
 /* Hero section ends */
@@ -392,6 +406,7 @@ figure img {
     border: 2px outset white;
     font-size: 0.875rem;
     outline: none;
+    font-family: var(--font-family);
 }
 
 .input-field::placeholder {
