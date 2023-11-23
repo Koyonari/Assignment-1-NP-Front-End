@@ -1,5 +1,5 @@
 ## This is my Assignment 1 code where I design and develop a responsive website for a fictional band called "Kessoku Band" from an anime called "Bocchi the Rock!"
-This website helps fans of the show who are looking to indulge themselves in more Bocchi the Rock! This website sells the official Discography and Merch of the anime such as vinyl records, cds, hoodies, cups and shirts. Kessoku Band is a band that features a group of 4 friends - Hitori Gotoh, Nijika Ijichi, Ikuyo Kita and Ryo Yamada that produces J-rock songs.
+This website helps fans of the show who are looking to indulge themselves in more Bocchi the Rock! This website sells the official Discography and Merch of the anime such as hoodies, cups, posters and shirts. Kessoku Band is a band that features a group of 4 friends - Hitori Gotoh, Nijika Ijichi, Ikuyo Kita and Ryo Yamada that produces J-rock songs.
 
 References:
 

@@ -20,14 +20,18 @@
       <img src = "assets/kessoku band logo.webp"
       width = auto
       height = "65">
-      <ul class="navigation">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#tours" class="nav-link">Tours</a></li>
-          <li><a href="#discography" class="nav-link">Discography</a></li>
-          <li><a href="#merch" class="nav-link">Merch</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#support" class="nav-link">Support</a></li>
-      </ul>
+        <ul class="navigation">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#tours" class="nav-link">Tours</a></li>
+            <li><a href="#discography" class="nav-link">Discography</a></li>
+            <li><a href="#merch" class="nav-link">Merch</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#support" class="nav-link">Support</a></li>
+            <li><a href="#cart" class="nav-link">
+              <img src="assets/shoppingcart.png" class = "cart" alt="Cart">
+              <span class = "quantity">0</span>
+            </a></li>
+        </ul>
       <button class="burger-menu" id="burger-menu">
           <ion-icon class="bars" name="menu-outline"></ion-icon>
       </button>
@@ -238,17 +242,52 @@
       class="hero-img"
     />
     <div class="bio animate__animated animate__shakeX">
-      <h2 class="bio-title"><u>About Kessoku Band</u></h2>
       <p class="bio-text">
         Kessoku Band is the debut studio album by Kessoku Band, a fictional musical group from the anime television series Bocchi the Rock!, released digitally on December 25, 2022, and physically on CD on December 28 by Aniplex. Featuring vocals from voice actresses Yoshino Aoyama, Sayumi Suzushiro, Saku Mizuno, and Ikumi Hasegawa, the album consists of 14 tracks previously heard in the anime, including a cover of Asian Kung-Fu Generation's "Rockn' Roll, Morning Light Falls on You", as well as newly recorded songs; nine singles preceded the album's physical release. Commercially, Kessoku Band peaked at number one on the Billboard Japan Hot Albums Chart and Oricon Albums Chart, and was certified gold by the Recording Industry Association of Japan.
       </p>
     </div>
   </section>
   <div class="flex-container">
-    <div>Ryo Yamada</div>
-    <div>Ikuyo Kita</div>
-    <div>Hitori Gotoh</div>
-    <div>Nijika Ijichi</div>  
+    <div>
+      <img
+      src="assets/Ryo Yamada.jpg"
+      alt="Ryo Yamada"
+      loading="lazy"
+      class="profile-img"
+      />
+      <h5>Ryo Yamada</h5>
+      <p>She is a second year at Shimokitazawa High School and is the bassist of Kessoku Band. Known for her androgynous appearance and a mysterious atmosphere, she often fascinates women, who falls in love at first sight.</p>
+    </div>
+    <div>
+      <img
+      src="assets/Ikuyo Kita.jpg"
+      alt="Ikuyo Kita"
+      loading="lazy"
+      class="profile-img"
+      />
+      <h5>Ikuyo Kita</h5>
+      <p>She is a first year of Shuka High School and is in charge of the rhythm guitar and vocals of Kessoku Band. She has great admiration for Ryo Yamada after seeing her street concert and wants to learn more from Hitori Gotoh.</p>
+    </div>
+    <div>
+      <img
+      src="assets/Hitori Gotoh.jpg"
+      alt="Hitori Gotoh"
+      loading="lazy"
+      class="profile-img"
+      />
+      <h5>Hitori Gotoh</h5>
+      <p>An extremely timid and introverted first-year student in high school. She is in charge of the responsibility of playing the lead guitar for Kessoku Band. She aspires to perform in a band that could showcase even a reserved girl's talent, hence she began playing the guitar. </p>
+    </div>
+    <div>
+      <img
+      src="assets/Ijichi Nijika.jpg"
+      alt="Nijika Ijichi"
+      loading="lazy"
+      class="profile-img"
+      />
+      <h5>Ijichi Nijika</h5>
+      <p>She is a second-year student of Shimokitazawa High School and is the outgoing leader and drummer in Kessoku Band. She was exposed to band culture at an early age due to the influence of her older sister who was once in a band and is the manager of a live house, Starry.</p>
+    </div>  
   </div>
 
 
@@ -302,6 +341,17 @@
           </div>
         </div>
       </section>
+
+  <!--Shopping cart section-->
+  <div class = "card">
+    <h6>Shopping Cart</h6>
+    <ul class = "listcart"></ul>
+    <div class = "checkout">
+      <div class = "total">0</div>
+      <div class = "closeshopping">Close</div>
+    </div>
+  </div>
+
 
   <!-- Scroll to top Button -->
   <i class="scroll-up" id="scroll-up">

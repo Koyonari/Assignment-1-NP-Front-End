@@ -125,6 +125,19 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 
+nav ul li span {
+    background-color: red;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
@@ -324,19 +337,48 @@ figure img {
 .flex-container {
     display: flex;
     min-width: 450px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     background-color: rgb(0, 0, 0);
     color: white;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
 }
 
 .flex-container > div {
+    display: center;
+    justify-content: center;
+    align-items: center;
     background-color: #282828;
     width: 100px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+    width: 20vw;
+    height: 41vw;
+    border-radius: 7.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex-container > div > h5 {
+    line-height: 15px;
+    position: relative;
+    margin-top: -10px;
+}
+.flex-container > div > p {
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    line-height: 20px;
+    border: 1.5px solid rgb(132, 132, 132);
+    margin-top: -10px;
+    aspect-ratio: 16/10;
+    width:20vw;
+    height: auto;
+    border-radius: 5%;
 }
 
 .hero {
@@ -354,11 +396,24 @@ figure img {
 }
   
 .bio {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 40vw;
     padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px white;
     background-color: rgb(255, 255, 255);
+}
+
+.profile-img {
+    padding-top: 20px;
+    height: 250px;
+    width: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 /* Hero section ends */
 
@@ -439,6 +494,9 @@ figure img {
 }
 /* Support section ends */
 
+/* Cart section starts */
+
+/* Cart section ends */
 /* Scroll up starts */
 .scroll-up {
     position: fixed;
