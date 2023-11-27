@@ -26,4 +26,4 @@ function changeImage(direction) {
     sliderImage.src = images[currentIndex];
     sliderImage.style.opacity = 1; // Set opacity to 1 after a short delay
   }, 300);
-}
+};

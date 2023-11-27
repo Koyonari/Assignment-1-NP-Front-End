@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src = "defer.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -27,9 +28,10 @@
             <li><a href="#merch" class="nav-link">Merch</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#support" class="nav-link">Support</a></li>
-            <li><a href="#cart" class="nav-link">
+            <li><a href="#merch" class="nav-link">
+              <button id = "open_cart_btn">
               <img src="assets/shoppingcart.png" class = "cart" alt="Cart">
-              <span class = "quantity">0</span>
+              </button>
             </a></li>
         </ul>
       <button class="burger-menu" id="burger-menu">
@@ -50,7 +52,6 @@
   </div>
 
   <!-- Discography section -->
-  <script defer src = "defer.js"></script>
   <section class = "hidden" id = "discography">
     <h2>Discography</h2>
     <ul class="flex-container2">
@@ -132,103 +133,143 @@
   <!-- Merch section -->
   <section class = "merch" id = "merch">
     <h2>Merch</h2>
+    <div class = "items">
     <div class = "pro-container">
+
       <div class = "pro">
-        <img src="assets/bocchi cyberpunk shirt.jpg" alt="Bocchi X Cyberpunk Shirt">
-        <div class = "des">
-          <h5>Bocchi X Cyberpunk Shirt</h5>
-          <h4>$25</h4>
+        <div class = "item">
+          <img src="assets/bocchi cyberpunk shirt.jpg" alt="Bocchi X Cyberpunk Shirt">
+          <div class = "des">
+            <h5>Bocchi X Cyberpunk Shirt</h5>
+            <h4>$25</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/bocchi friendship hoodie.jpg" alt="Bocchi the Rock! Appetite for Friendship">
-        <div class = "des">
-          <h5>Appetite for Friendship Hoodie</h5>
-          <h4>$60</h4>
+        <div class = "item">
+          <img src="assets/bocchi friendship hoodie.jpg" alt="Bocchi the Rock! Appetite for Friendship">
+          <div class = "des">
+            <h5>Appetite for Friendship Hoodie</h5>
+            <h4>$60</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/bocchi hoodie.jpg" alt="Bocchi the Rock! Back in Pink Hoodie">
-        <div class = "des">
-          <h5>Back in Pink Hoodie</h5>
-          <h4>$60</h4>
+        <div class = "item">
+          <img src="assets/bocchi hoodie.jpg" alt="Bocchi the Rock! Back in Pink Hoodie">
+          <div class = "des">
+            <h5>Back in Pink Hoodie</h5>
+            <h4>$60</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/bocchi mug.jpg" alt="Kessoku Band Mug">
-        <div class = "des">
-          <h5>Kessoku Band Mug</h5>
-          <h4>$15</h4>
+        <div class = "item">
+          <img src="assets/bocchi mug.jpg" alt="Kessoku Band Mug">
+          <div class = "des">
+            <h5>Kessoku Band Mug</h5>
+            <h4>$15</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/gotoh poster.jpg" alt="Hitori Gotoh Guitar Poster">
-        <div class = "des">
-          <h5>Hitori Gotoh Guitar Poster</h5>
-          <h4>$10</h4>
+        <div class = "item">
+          <img src="assets/gotoh poster.jpg" alt="Hitori Gotoh Guitar Poster">
+          <div class = "des">
+            <h5>Hitori Gotoh Guitar Poster</h5>
+            <h4>$10</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/hitori gotoh poster.jpg" alt="Hitori Gotoh Rock Poster">
-        <div class = "des">
-          <h5>Hitori Gotoh Rock Poster</h5>
-          <h4>$15</h4>
+        <div class = "item">
+          <img src="assets/hitori gotoh poster.jpg" alt="Hitori Gotoh Rock Poster">
+          <div class = "des">
+            <h5>Hitori Gotoh Rock Poster</h5>
+            <h4>$15</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/kessoku band shirt.jpg" alt="Kessoku Band Logo Shirt">
-        <div class = "des">
-          <h5>Kessoku Band Logo Shirt</h5>
-          <h4>$25</h4>
+        <div class = "item">
+          <img src="assets/kessoku band shirt.jpg" alt="Kessoku Band Logo Shirt">
+          <div class = "des">
+            <h5>Kessoku Band Logo Shirt</h5>
+            <h4>$25</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/gotoh tote bag.jpg" alt="Hitori Gotoh Tote Bag">
-        <div class = "des">
-          <h5>Hitori Gotoh Tote Bag</h5>
-          <h4>$20</h4>
+        <div class = "item">
+          <img src="assets/gotoh tote bag.jpg" alt="Hitori Gotoh Tote Bag">
+          <div class = "des">
+            <h5>Hitori Gotoh Tote Bag</h5>
+            <h4>$20</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/kessoku band shirt2.jpg" alt="Kessoku Band Members Shirt">
-        <div class = "des">
-          <h5>Kessoku Band Members Shirt</h5>
-          <h4>$25</h4>
+        <div class = "item">
+          <img src="assets/kessoku band shirt2.jpg" alt="Kessoku Band Members Shirt">
+          <div class = "des">
+            <h5>Kessoku Band Members Shirt</h5>
+            <h4>$25</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/kita hoodie.jpg" alt="Ikuyo Kita Hoodie">
-        <div class = "des">
-          <h5>Ikuyo Kita Hoodie</h5>
-          <h4>$60</h4>
+        <div class = "item">
+          <img src="assets/kita hoodie.jpg" alt="Ikuyo Kita Hoodie">
+          <div class = "des">
+            <h5>Ikuyo Kita Hoodie</h5>
+            <h4>$60</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/ryo hoodie.jpg" alt="Ryo Yamada Hoodie">
-        <div class = "des">
-          <h5>Ryo Yamada Hoodie</h5>
-          <h4>$60</h4>
+        <div class = "item">
+          <img src="assets/ryo hoodie.jpg" alt="Ryo Yamada Hoodie">
+          <div class = "des">
+            <h5>Ryo Yamada Hoodie</h5>
+            <h4>$60</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
       <div class = "pro">
-        <img src="assets/kita poster.jpg" alt="Ikuyo Kita Poster">
-        <div class = "des">
-          <h5>Ikuyo Kita Poster</h5>
-          <h4>$15</h4>
+        <div class = "item">
+          <img src="assets/kita poster.jpg" alt="Ikuyo Kita Poster">
+          <div class = "des">
+            <h5>Ikuyo Kita Poster</h5>
+            <h4>$15</h4>
+          </div>
+          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-        <a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a>
       </div>
+
+    
+    </div>
     </div>
   </section>
 
@@ -343,15 +384,108 @@
       </section>
 
   <!--Shopping cart section-->
-  <div class = "card">
-    <h6>Shopping Cart</h6>
-    <ul class = "listcart"></ul>
-    <div class = "checkout">
-      <div class = "total">0</div>
-      <div class = "closeshopping">Close</div>
+  <!--Side Cart-->
+  <div id = "sidecart" class = "sidecart">
+    <div class = "cart_content">
+      <!--Header-->
+      <div class = "cart_header">
+        <img src = "assets/shoppingcart.png" alt = "" style = "width: 30px">
+        <div class = "header_title">
+          <h3>Your Cart</h3>
+        </div>
+        <span id = "close_btn" class = "close_btn">&times;</span>
+      </div>
+
+      <!--Cart items-->
+      <div class = "cart_items">
+        <!--Items-->
+        <div class = "cart_item">
+          <div class = "remove_item">
+            <span>&times;</span>
+          </div>
+          <div class="item_img">
+            <img src = "assets/bocchi cyberpunk shirt.jpg" alt = "">
+          </div>
+          <div class="item_details">
+            <p>Bocchi X Cyberpunk Shirt</p>
+            <strong>$25</strong>
+            <div class = "qty">
+              <span>-</span>
+              <strong>1</strong>
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class = "cart_item">
+          <div class = "remove_item">
+            <span>&times;</span>
+          </div>
+          <div class="item_img">
+            <img src = "assets/bocchi friendship hoodie.jpg" alt = "">
+          </div>
+          <div class="item_details">
+            <p>Appetite for Friendship Hoodie</p>
+            <strong>$60</strong>
+            <div class = "qty">
+              <span>-</span>
+              <strong>1</strong>
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class = "cart_item">
+          <div class = "remove_item">
+            <span>&times;</span>
+          </div>
+          <div class="item_img">
+            <img src = "assets/bocchi hoodie.jpg" alt = "">
+          </div>
+          <div class="item_details">
+            <p>Back in Pink Hoodie</p>
+            <strong>$60</strong>
+            <div class = "qty">
+              <span>-</span>
+              <strong>1</strong>
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class = "cart_item">
+          <div class = "remove_item">
+            <span>&times;</span>
+          </div>
+          <div class="item_img">
+            <img src = "assets/bocchi mug.jpg" alt = "">
+          </div>
+          <div class="item_details">
+            <p>Kessoku Band Mug</p>
+            <strong>$15</strong>
+            <div class = "qty">
+              <span>-</span>
+              <strong>1</strong>
+              <span>+</span>
+            </div>
+          </div>
+      </div>
+      
+      <!--Cart Actions-->
+      <div class = "cart_actions">
+        <div class="subtotal">
+          <p>SUBTOTAL: </p>
+          <p>$<span id = "subtotal_price">25</span></p>
+        </div>
+        <button>View Cart</button>
+        <button>Checkout</button>
+        </div>
+      </div>
     </div>
   </div>
-
 
   <!-- Scroll to top Button -->
   <i class="scroll-up" id="scroll-up">
