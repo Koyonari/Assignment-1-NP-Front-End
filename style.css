@@ -53,7 +53,7 @@ button:hover {
 /* Parallax scrolling effect starts */
 .parallax {
     /* The image used */
-    background-image: url('/../assets/kessoku background2.png');
+    background-image: url('/../assets/kessoku_background2.png');
   
     /* Height */
     height: 45%;
@@ -66,7 +66,22 @@ button:hover {
 }
 /* Parallax scrolling effect ends */
 
+#slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: black;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
 /* Tours section starts */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .image-slider {
     position: relative;
     width: auto;
@@ -74,6 +89,48 @@ button:hover {
     overflow: hidden;
 }
   
+.tours {
+    margin-bottom: 30px;
+}
+
+.youtube-video {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-video iframe {
+    aspect-ratio: 16/9;
+    width: auto; /* Default width for Phone */
+    height: 300px; /* Default height */
+}
+  
+/* Media queries for different screen sizes */
+@media screen and (min-width: 720) {
+    .youtube-video iframe {
+        aspect-ratio: 16/9;
+        width: auto; /* Adjust width for ipad */
+        height: 400px; /* Adjust height */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .youtube-video iframe {
+        aspect-ratio: 16/9;
+        width: auto; /* Adjust width for larger screens */
+        height: 500px; /* Adjust height */
+    }
+}
+  
+@media screen and (min-width: 1366px) {
+    .youtube-video iframe {
+        aspect-ratio: 16/9;
+        width: auto; /* Adjust width for even larger screens */
+        height: 650px; /* Adjust height */
+    }
+}
+
 #slider-image {
     width: 100%;
     height: 100%;
@@ -102,9 +159,8 @@ button:hover {
 .right-arrow {
     right: 10px;
 }
-  
-
 /* Tours section ends */
+  
 
 /* Navbar section starts*/
 nav {
@@ -516,6 +572,10 @@ figure img {
     background-color: black;
 }
 
+#open_cart_btn:hover {
+    cursor: pointer;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -538,7 +598,7 @@ figure img {
     position: fixed;
     top: 0;
     right: 0;
-    width: 40vw;
+    width: 30vw;
     height: 100vh;
     background-color: black;
     box-shadow: -10px 0 15px rgba(123, 123, 123, 0.54);
@@ -617,6 +677,7 @@ figure img {
     color: rgb(255, 255, 255);
     font-size: 20px;
     user-select: none;
+    background-color: white;
 }
 
 .item_img {
@@ -661,7 +722,7 @@ figure img {
     font-size: 1.5rem;
     line-height: 1;
     cursor: pointer;
-    box-shadow: 3px 3px 5px rgb(186, 186, 186), -1px -1px 2px rgb(188, 188, 188);
+    box-shadow: 3px 3px 5px rgb(186, 186, 186);
     user-select: none;
     transition: scale 0.2s ease;
 }
@@ -691,13 +752,14 @@ p {
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 10px;
+    flex: 0.65;
     border-top: 1px solid rgb(175, 175, 175);
     box-shadow: 0 -5px 10px rgba(175, 175, 175, 0.866);
+    height: 5vh;
 }
 
 .cart_actions .subtotal {
-    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -730,7 +792,7 @@ p {
 /* Scroll up starts */
 .scroll-up {
     position: fixed;
-    right: 0.5%;
+    left: 1.5%;
     bottom: 3%;
     cursor: pointer;
 }

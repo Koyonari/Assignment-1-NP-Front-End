@@ -12,13 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/x-icon" href="assets/kessoku_band_logo.webp">
 </head>
 
 <body>
   <section id = "home"></section>
   <!-- Navbar -->
   <nav>
-      <img src = "assets/kessoku band logo.webp"
+      <img src = "assets/kessoku_band_logo.webp"
       width = auto
       height = "65">
         <ul class="navigation">
@@ -28,9 +29,9 @@
             <li><a href="#merch" class="nav-link">Merch</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#support" class="nav-link">Support</a></li>
-            <li><a href="#merch" class="nav-link">
+            <li><a href="#sidecart" class="nav-link">
               <button id = "open_cart_btn">
-              <img src="assets/shoppingcart.png" class = "cart" alt="Cart">
+                <img src="assets/shoppingcart.png" a href = "cart" class = "cart" alt="Cart">
               </button>
             </a></li>
         </ul>
@@ -48,8 +49,17 @@
       <button class="arrow left-arrow" onclick="changeImage(-1)">&lt;</button>
       <button class="arrow right-arrow" onclick="changeImage(1)">&gt;</button>
     </div>
+    <div class="youtube-video">
+      <iframe
+      src="https://www.youtube.com/embed/XpERLoiv8HQ" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    </div>
   </section>
   </div>
+
+
 
   <!-- Discography section -->
   <section class = "hidden" id = "discography">
@@ -57,7 +67,7 @@
     <ul class="flex-container2">
       <div class = "logo hidden">
       <figure>
-          <img src="assets/Ano Band.webp" alt="Ano Band" id="slider-image">
+          <img src="assets/Ano_Band.webp" alt="Ano Band" id="slider-image">
           <figcaption>Ano Band</figcaption>
       </figure>
       </div>
@@ -69,13 +79,13 @@
       </div>
       <div class = "logo hidden">
       <figure>
-        <img src="assets/Guitar, Loneliness and the Blue Planet.webp" alt="Guitar, Loneliness and the Blue Planet" id="slider-image">
+        <img src="assets/Guitar,_Loneliness_and_the_Blue_Planet.webp" alt="Guitar, Loneliness and the Blue Planet" id="slider-image">
         <figcaption>Guitar, Loneliness and the Blue Planet</figcaption>
       </figure>
       </div>
       <div class = "logo hidden">
       <figure>
-        <img src="assets/I Will Never Forget.webp" alt="I Will Never Forget!" id="slider-image">
+        <img src="assets/I_Will_Never_Forget.webp" alt="I Will Never Forget!" id="slider-image">
         <figcaption>I Will Never Forget!</figcaption>
       </figure>
       </div>
@@ -87,43 +97,43 @@
       </div>
       <div class = "logo hidden">
       <figure>
-        <img src="assets/If I Could Be A Constellation.webp" alt="If I Could Be A Constellation" id="slider-image">
+        <img src="assets/If_I_Could_Be_A_Constellation.webp" alt="If I Could Be A Constellation" id="slider-image">
         <figcaption>If I Could Be A Constellation</figcaption>
       </figure>
       </div>
       <div class = "logo hidden">
         <figure>
-          <img src="assets/Rockn' Roll, Morning Light Falls on You.webp" alt="Rockn' Roll, Morning Light Falls on You" id="slider-image">
+          <img src="assets/Rockn'_Roll,_Morning_Light_Falls_on_You.webp" alt="Rockn' Roll, Morning Light Falls on You" id="slider-image">
           <figcaption>Rockn' Roll, Morning Light Falls on You</figcaption>
         </figure>
         </div>
       <div class = "logo hidden">
       <figure>
-        <img src="assets/What is Wrong With.webp" alt="What is Wrong With" id="slider-image">
+        <img src="assets/What_is_Wrong_With.webp" alt="What is Wrong With" id="slider-image">
         <figcaption>What is Wrong With</figcaption>
       </figure>
       </div>
       <div class = "logo hidden">
         <figure>
-          <img src="assets/bocchi album.jpg" alt="Seishun Complex" id="slider-image">
+          <img src="assets/bocchi_album.jpg" alt="Seishun Complex" id="slider-image">
           <figcaption>Seishun Complex</figcaption>
         </figure>
         </div>
         <div class = "logo hidden">
           <figure>
-            <img src="assets/I'm the Only Ghost.webp" alt="I'm the Only Ghost" id="slider-image">
+            <img src="assets/I'm_the_Only_Ghost.webp" alt="I'm the Only Ghost" id="slider-image">
             <figcaption>Blue Spring and Western Sky</figcaption>
           </figure>
           </div>
       <div class = "logo hidden">
       <figure>
-        <img src="assets/bocchi album.jpg" alt="Lonely Tokyo" id="slider-image">
+        <img src="assets/bocchi_album.jpg" alt="Lonely Tokyo" id="slider-image">
         <figcaption>Lonely Tokyo</figcaption>
       </figure>
       </div>
       <div class = "logo hidden">
       <figure>
-        <img src="assets/bocchi album0.jpg" alt="Full album" id="slider-image">
+        <img src="assets/bocchi_album0.jpg" alt="Full album" id="slider-image">
         <figcaption>Kessoku Band Full Album</figcaption>
       </figure>
       </div>
@@ -134,137 +144,137 @@
   <section class = "merch" id = "merch">
     <h2>Merch</h2>
     <div class = "items">
-    <div class = "pro-container">
+      <div class = "pro-container">
 
-      <div class = "pro">
-        <div class = "item">
-          <img src="assets/bocchi cyberpunk shirt.jpg" alt="Bocchi X Cyberpunk Shirt">
-          <div class = "des">
-            <h5>Bocchi X Cyberpunk Shirt</h5>
-            <h4>$25</h4>
+        <div class = "pro">
+          <div class = "item">
+            <img src="assets/bocchi_cyberpunk_shirt.jpg" alt="Bocchi X Cyberpunk Shirt">
+            <div class = "des">
+              <h5>Bocchi X Cyberpunk Shirt</h5>
+              <h4>$25</h4>
+            </div>
+            <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
-      </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/bocchi friendship hoodie.jpg" alt="Bocchi the Rock! Appetite for Friendship">
+          <img src="assets/bocchi_friendship_hoodie.jpg" alt="Bocchi the Rock! Appetite for Friendship">
           <div class = "des">
             <h5>Appetite for Friendship Hoodie</h5>
             <h4>$60</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/bocchi hoodie.jpg" alt="Bocchi the Rock! Back in Pink Hoodie">
+          <img src="assets/bocchi_hoodie.jpg" alt="Bocchi the Rock! Back in Pink Hoodie">
           <div class = "des">
             <h5>Back in Pink Hoodie</h5>
             <h4>$60</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/bocchi mug.jpg" alt="Kessoku Band Mug">
+          <img src="assets/bocchi_mug.jpg" alt="Kessoku Band Mug">
           <div class = "des">
             <h5>Kessoku Band Mug</h5>
             <h4>$15</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/gotoh poster.jpg" alt="Hitori Gotoh Guitar Poster">
+          <img src="assets/gotoh_poster.jpg" alt="Hitori Gotoh Guitar Poster">
           <div class = "des">
             <h5>Hitori Gotoh Guitar Poster</h5>
             <h4>$10</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/hitori gotoh poster.jpg" alt="Hitori Gotoh Rock Poster">
+          <img src="assets/hitori_gotoh_poster.jpg" alt="Hitori Gotoh Rock Poster">
           <div class = "des">
             <h5>Hitori Gotoh Rock Poster</h5>
             <h4>$15</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/kessoku band shirt.jpg" alt="Kessoku Band Logo Shirt">
+          <img src="assets/kessoku_band_shirt.jpg" alt="Kessoku Band Logo Shirt">
           <div class = "des">
             <h5>Kessoku Band Logo Shirt</h5>
             <h4>$25</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/gotoh tote bag.jpg" alt="Hitori Gotoh Tote Bag">
+          <img src="assets/gotoh_tote_bag.jpg" alt="Hitori Gotoh Tote Bag">
           <div class = "des">
             <h5>Hitori Gotoh Tote Bag</h5>
             <h4>$20</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/kessoku band shirt2.jpg" alt="Kessoku Band Members Shirt">
+          <img src="assets/kessoku_band_shirt2.jpg" alt="Kessoku Band Members Shirt">
           <div class = "des">
             <h5>Kessoku Band Members Shirt</h5>
             <h4>$25</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/kita hoodie.jpg" alt="Ikuyo Kita Hoodie">
+          <img src="assets/kita_hoodie.jpg" alt="Ikuyo Kita Hoodie">
           <div class = "des">
             <h5>Ikuyo Kita Hoodie</h5>
             <h4>$60</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/ryo hoodie.jpg" alt="Ryo Yamada Hoodie">
+          <img src="assets/ryo_hoodie.jpg" alt="Ryo Yamada Hoodie">
           <div class = "des">
             <h5>Ryo Yamada Hoodie</h5>
             <h4>$60</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
       <div class = "pro">
         <div class = "item">
-          <img src="assets/kita poster.jpg" alt="Ikuyo Kita Poster">
+          <img src="assets/kita_poster.jpg" alt="Ikuyo Kita Poster">
           <div class = "des">
             <h5>Ikuyo Kita Poster</h5>
             <h4>$15</h4>
           </div>
-          <button><a href = "#"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
+          <button><a href = "#merch"><img src="assets/shoppingcart.png" class = "cart" alt="Cart"></a></button>
         </div>
       </div>
 
@@ -277,7 +287,7 @@
   <h2>About</h2>
   <section class="hero" id="about">
     <img
-      src="assets/kessoku band logo.webp"
+      src="assets/kessoku_band_logo.webp"
       alt="kessoku logo"
       loading="lazy"
       class="hero-img"
@@ -291,7 +301,7 @@
   <div class="flex-container">
     <div>
       <img
-      src="assets/Ryo Yamada.jpg"
+      src="assets/Ryo_Yamada.jpg"
       alt="Ryo Yamada"
       loading="lazy"
       class="profile-img"
@@ -301,7 +311,7 @@
     </div>
     <div>
       <img
-      src="assets/Ikuyo Kita.jpg"
+      src="assets/Ikuyo_Kita.jpg"
       alt="Ikuyo Kita"
       loading="lazy"
       class="profile-img"
@@ -311,7 +321,7 @@
     </div>
     <div>
       <img
-      src="assets/Hitori Gotoh.jpg"
+      src="assets/Hitori_Gotoh.jpg"
       alt="Hitori Gotoh"
       loading="lazy"
       class="profile-img"
@@ -321,7 +331,7 @@
     </div>
     <div>
       <img
-      src="assets/Ijichi Nijika.jpg"
+      src="assets/Ijichi_Nijika.jpg"
       alt="Nijika Ijichi"
       loading="lazy"
       class="profile-img"
@@ -401,10 +411,10 @@
         <!--Items-->
         <div class = "cart_item">
           <div class = "remove_item">
-            <span>&times;</span>
+            <span class = "close">&times;</span>
           </div>
           <div class="item_img">
-            <img src = "assets/bocchi cyberpunk shirt.jpg" alt = "">
+            <img src = "assets/bocchi_cyberpunk_shirt.jpg" alt = "">
           </div>
           <div class="item_details">
             <p>Bocchi X Cyberpunk Shirt</p>
@@ -423,7 +433,7 @@
             <span>&times;</span>
           </div>
           <div class="item_img">
-            <img src = "assets/bocchi friendship hoodie.jpg" alt = "">
+            <img src = "assets/bocchi_friendship_hoodie.jpg" alt = "">
           </div>
           <div class="item_details">
             <p>Appetite for Friendship Hoodie</p>
@@ -442,7 +452,7 @@
             <span>&times;</span>
           </div>
           <div class="item_img">
-            <img src = "assets/bocchi hoodie.jpg" alt = "">
+            <img src = "assets/bocchi_hoodie.jpg" alt = "">
           </div>
           <div class="item_details">
             <p>Back in Pink Hoodie</p>
@@ -461,7 +471,7 @@
             <span>&times;</span>
           </div>
           <div class="item_img">
-            <img src = "assets/bocchi mug.jpg" alt = "">
+            <img src = "assets/bocchi_mug.jpg" alt = "">
           </div>
           <div class="item_details">
             <p>Kessoku Band Mug</p>
@@ -473,19 +483,19 @@
             </div>
           </div>
       </div>
+    </div>
       
       <!--Cart Actions-->
       <div class = "cart_actions">
         <div class="subtotal">
           <p>SUBTOTAL: </p>
-          <p>$<span id = "subtotal_price">25</span></p>
+          <p>$<span id = "subtotal_price">160</span></p>
         </div>
         <button>View Cart</button>
         <button>Checkout</button>
         </div>
       </div>
     </div>
-  </div>
 
   <!-- Scroll to top Button -->
   <i class="scroll-up" id="scroll-up">
