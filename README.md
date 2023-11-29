@@ -2,7 +2,8 @@
 This website helps fans of the show who are looking to indulge themselves in more Bocchi the Rock! This website sells the official Discography and Merch of the anime such as hoodies, cups, posters and shirts. Kessoku Band is a band that features a group of 4 friends - Hitori Gotoh, Nijika Ijichi, Ikuyo Kita and Ryo Yamada that produces J-rock songs.
 
 References:
-
+> Linked Youtube Video: https://youtu.be/XpERLoiv8HQ
+>
 > Scroll-up arrow Icon: https://icons8.com/icons/set/scroll-top
 > 
 > Shopping cart Icon: https://icons8.com/icons/set/shopping-cart
