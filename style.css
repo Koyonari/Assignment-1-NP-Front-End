@@ -92,7 +92,7 @@ button:hover {
 }
   
 .tours {
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
 }
 
 .youtube-video {
@@ -162,6 +162,13 @@ button:hover {
 .right-arrow {
     right: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    .arrow {
+        color: black;
+        font-weight: bold;
+    }
+}
 /* Tours section ends */
   
 
@@ -207,6 +214,7 @@ nav ul li span {
 
 .hamburger {
     display: none;
+    color: white;
 }
 
 .bar {
@@ -216,7 +224,7 @@ nav ul li span {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: #fefefe;
 }
 .header {
     border-bottom: 1px solid white;
@@ -230,7 +238,7 @@ nav ul li span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 17vw;
+    padding-left: 15vw;
 }
 .navbar img {
     margin-right: 150px;
@@ -250,8 +258,9 @@ nav ul li span {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px) {
+@media (orientation: portrait) or (max-width: 1210px) {
     .nav-menu {
+        display: none;
         position: fixed;
         left: -100%;
         top: 5rem;
@@ -261,8 +270,7 @@ nav ul li span {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -507,7 +515,7 @@ figure img {
 /* Hero section starts*/
 .flex-container {
     display: flex;
-    min-width: 450px;
+    min-width: 95vw;
     justify-content: center;
     flex-wrap: nowrap;
     background-color: rgb(0, 0, 0);
@@ -516,10 +524,16 @@ figure img {
     padding-left: 10px;
     padding-right: 10px;
     align-items: center;
+    border: 1px solid white;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .flex-container > div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #282828;
@@ -530,26 +544,25 @@ figure img {
     font-size: 30px;
     width: 20vw;
     height: 41vw;
-    border-radius: 7.5%;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: -2rem;
 }
 
 .flex-container > div > h5 {
-    line-height: 15px;
+    color: white;
+    font-size: 100%;
+    margin: 0;
     position: relative;
-    margin-top: -10px;
 }
+
 .flex-container > div > p {
-    flex-wrap: wrap;
     font-size: 0.75rem;
-    line-height: 20px;
-    border: 1.5px solid rgb(132, 132, 132);
-    margin-top: -10px;
-    aspect-ratio: 16/10;
-    width:20vw;
-    height: auto;
-    border-radius: 5%;
+    line-height: 1.5rem;
+    font-weight: regular;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    width: 20vw;
 }
 
 .hero {
@@ -565,7 +578,10 @@ figure img {
     width: 20%;
     object-fit: contain;
 }
-  
+
+.flex-container-3 {
+    display: flex;
+}
 .bio {
     display:flex;
     flex-wrap: wrap;
@@ -582,13 +598,53 @@ figure img {
 }
 
 .profile-img {
-    padding-top: 20px;
-    height: 250px;
-    width: auto;
+    height: 20vw;
+    width: 20vw;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 800px) {
+    .flex-container-3 {
+      flex-direction: column; /* Change the flex direction to column for mobile screens */
+      align-items: center; /* Center align the items */
+      justify-content: center;
+    }
+  
+    .hero {
+        margin-bottom: 2rem; /* Add margin between hero and bio */
+        text-align: center;
+    }
+  
+    .bio {
+      width: 90vw;
+      margin-right: 5vw;
+      margin-left: 5vw; /* Adjust the width for mobile screens */
+      font-size: 1.25rem;
+    }
+
+    .hero img {
+        width: 40vw;
+        height: auto; /* Ensure the height adjusts proportionally */
+        object-fit: contain; /* Maintain aspect ratio while fitting within the container */
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 3vh;
+    }    
 }
 /* Hero section ends */
 

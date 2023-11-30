@@ -18,29 +18,30 @@
 <body>
   <section id="home"></section>
   <!-- Navbar -->
-  <header class = "header">
-    <nav class = "navbar">
+  <header class="header">
+    <nav class="navbar">
       <img src="assets/kessoku_band_logo.webp" alt="Kessoku Band Logo" class="nav-img" style="width: auto; height: 65px;">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <ul class="nav-menu">
-        <li class = "nav-item"><a href="#home">Home</a></li>
-        <li class = "nav-item"><a href="#tours">Tours</a></li>
-        <li class = "nav-item"><a href="#discography">Discography</a></li>
-        <li class = "nav-item"><a href="#merch">Merch</a></li>
-        <li class = "nav-item"><a href="#about">About</a></li>
-        <li class = "nav-item"><a href="#support">Support</a></li>
-        <li class = "nav-item">
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#tours">Tours</a></li>
+        <li class="nav-item"><a href="#discography">Discography</a></li>
+        <li class="nav-item"><a href="#merch">Merch</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#support">Support</a></li>
+        <li class="nav-item">
           <a href="#sidecart" class="nav-link">
             <img src="assets/shoppingcart.png" alt="Cart" id="open_cart_btn">
-          </a>                 
+          </a>
         </li>
       </ul>
-      <div class = "hamburger">
-        <span class = "bar"></span>
-        <span class = "bar"></span>
-        <span class = "bar"></span>
-      </div>
     </nav>
   </header>
+
 
   <!-- Tours section-->
   <div class = "parallax"></div>
@@ -286,6 +287,7 @@
   <!-- About section -->
   <h2>About</h2>
   <section class="hero" id="about">
+    <div class = "flex-container-3">
     <img
       src="assets/kessoku_band_logo.webp"
       alt="kessoku logo"
@@ -297,9 +299,10 @@
         Kessoku Band is the debut studio album by Kessoku Band, a fictional musical group from the anime television series Bocchi the Rock!, released digitally on December 25, 2022, and physically on CD on December 28 by Aniplex. Featuring vocals from voice actresses Yoshino Aoyama, Sayumi Suzushiro, Saku Mizuno, and Ikumi Hasegawa, the album consists of 14 tracks previously heard in the anime, including a cover of Asian Kung-Fu Generation's "Rockn' Roll, Morning Light Falls on You", as well as newly recorded songs; nine singles preceded the album's physical release. Commercially, Kessoku Band peaked at number one on the Billboard Japan Hot Albums Chart and Oricon Albums Chart, and was certified gold by the Recording Industry Association of Japan.
       </p>
     </div>
+  </div>
   </section>
   <div class="flex-container">
-    <div>
+    <div class = "about-container">
       <img
       src="assets/Ryo_Yamada.jpg"
       alt="Ryo Yamada"
@@ -309,7 +312,7 @@
       <h5>Ryo Yamada</h5>
       <p>She is a second year at Shimokitazawa High School and is the bassist of Kessoku Band. Known for her androgynous appearance and a mysterious atmosphere, she often fascinates women, who falls in love at first sight.</p>
     </div>
-    <div>
+    <div class = "about-container">
       <img
       src="assets/Ikuyo_Kita.jpg"
       alt="Ikuyo Kita"
@@ -319,7 +322,7 @@
       <h5>Ikuyo Kita</h5>
       <p>She is a first year of Shuka High School and is in charge of the rhythm guitar and vocals of Kessoku Band. She has great admiration for Ryo Yamada after seeing her street concert and wants to learn more from Hitori Gotoh.</p>
     </div>
-    <div>
+    <div class = "about-container">
       <img
       src="assets/Hitori_Gotoh.jpg"
       alt="Hitori Gotoh"
@@ -327,9 +330,9 @@
       class="profile-img"
       />
       <h5>Hitori Gotoh</h5>
-      <p>An extremely timid and introverted first-year student in high school. She is in charge of the responsibility of playing the lead guitar for Kessoku Band. She aspires to perform in a band that could showcase even a reserved girl's talent, hence she began playing the guitar. </p>
+      <p>An extremely timid and introverted first-year student in high school in charge of playing lead guitar for Kessoku Band. She aspires to perform in a band that could showcase even a reserved girl's talent, hence she began playing the guitar. </p>
     </div>
-    <div>
+    <div class = "about-container">
       <img
       src="assets/Ijichi_Nijika.jpg"
       alt="Nijika Ijichi"
@@ -337,7 +340,7 @@
       class="profile-img"
       />
       <h5>Ijichi Nijika</h5>
-      <p>She is a second-year student of Shimokitazawa High School and is the outgoing leader and drummer in Kessoku Band. She was exposed to band culture at an early age due to the influence of her older sister who was once in a band and is the manager of a live house, Starry.</p>
+      <p>A second-year in Shimokitazawa High School and the outgoing leader and drummer in Kessoku Band. She was exposed to band culture at an early age as her older sister was once in a band and is the manager of a live house, Starry.</p>
     </div>  
   </div>
 
@@ -507,5 +510,4 @@
   <script src="script.js"></script>
 
 </body>
-<script src = "hamburger.js"></script>
 </html>
