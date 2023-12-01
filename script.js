@@ -1,3 +1,18 @@
+//Responsive Navbar
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+//Close navbar when clicked on nav-link
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
+
 // scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 

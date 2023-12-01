@@ -45,7 +45,7 @@ li {
 }
 a {
     text-decoration: none;
-    color: var(--primary-color)
+    color: white;
 }
 
 button:hover {
@@ -189,35 +189,12 @@ nav {
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
-}
-
-nav ul {
-    display: flex;
-    gap: 2.5rem;
-    color: white;
-    margin: auto;
-}
-  
-nav ul li {
-    font-weight: var(--bold-font);
-}
-
-nav ul li span {
-    background-color: red;
-    border-radius: 50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: absolute;
-    top: -5px;
-    left: 80%;
-    padding: 3px 10px;
+    box-sizing: border-box;
 }
 
 .hamburger {
     display: none;
-    color: white;
+    cursor: pointer;
 }
 
 .bar {
@@ -225,7 +202,7 @@ nav ul li span {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #fefefe;
 }
@@ -234,54 +211,49 @@ nav ul li span {
 }
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
 }
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15vw;
+    color: white;
+    gap: 2.5rem;
 }
-.navbar img {
+.navbar-img {
     margin-right: 150px;
 }
 .nav-item {
     margin-left: 1vw;
 }
 .nav-link {
-    display: inline-block;
-    border: none;
-    padding: 5px 10px;
-    text-decoration: none;
-    cursor: pointer;
+    transition: 0.6s ease;
 }
-  
-.nav-link:hover{
+.nav-link:hover {
     cursor: pointer;
 }
 
-@media (orientation: portrait) or (max-width: 1210px) {
+@media(max-width: 1210px) {
     .nav-menu {
-        display: none;
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        left: -200%;
+        top: 70px;
+        gap: 0;
         flex-direction: column;
-        background-color: #fff;
+        background-color: black;
         width: 100%;
-        border-radius: 10px;
         text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        transition: 0.5s;
+    }
+
+    .nav-item {
+        margin: 1.5vh 0;
     }
 
     .nav-menu.active {
         left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
     }
 
     .hamburger {
@@ -469,7 +441,7 @@ figure img {
 }
 
 #merch .pro {
-    width: 17.5%;
+    width: 18%;
     min-width: 240px;
     padding: 10px 12px;
     border: 3px solid #2b2b2b;
@@ -809,6 +781,12 @@ figure img {
     box-shadow: -10px 0 15px rgba(123, 123, 123, 0.54);
     transform: translateX(110%);
     transition: transform 0.5s ease-in-out;
+}
+
+@media (width <= 1104px) {
+    .sidecart {
+        width: 100%;
+    }
 }
 
 .sidecart h3 {
