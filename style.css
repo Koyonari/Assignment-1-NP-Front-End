@@ -438,6 +438,7 @@ figure img {
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
+    padding: min(3vw);
 }
 
 #merch .pro {
@@ -730,15 +731,7 @@ figure img {
 }
 
 .submit-btn:hover {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
     background-color: red;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: var(--bold-font);
-    transition: var(--transition);
     cursor: pointer;
 }
 /* Support section ends */
