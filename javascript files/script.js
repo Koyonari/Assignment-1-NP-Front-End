@@ -1,4 +1,4 @@
-//Responsive Navbar
+//Responsive Navbar to Hamburger Menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -13,7 +13,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }));
 
-// scroll to top functionality
+//Scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 
 scrollUp.addEventListener("click", () => {
@@ -24,7 +24,7 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-// Tours box
+//Tours box
 const images = ["assets/liveconcert.jpg", "assets/liveconcert2.jpg", "assets/liveconcert3.webp"];
 let currentIndex = 0;
 
