@@ -438,6 +438,14 @@ figure img {
     filter: blur(0);
     transform: translateX(0);
 }
+
+.discography-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: black;
+    transition: opacity 0.3s ease-in-out;
+}
 /* Discography section ends */
 
 /* Merch section starts */
@@ -549,7 +557,6 @@ figure img {
 .flex-container > div > p {
     font-size: 0.75rem;
     line-height: 1.5rem;
-    font-weight: regular;
     margin-right: 1vw;
     margin-left: 1vw;
     width: 20vw;
@@ -563,17 +570,28 @@ figure img {
     max-width: 68.75rem;
     margin: auto;
 }
-.hero img {
-    height: 20%;
-    width: 20%;
+.hero-img {
+    aspect-ratio: 1/1;
+    min-width: 20vw;
     object-fit: contain;
+    max-width: 100%;
+    height: auto;
 }
 
 .flex-container-3 {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+.hero-img-container {
+    max-width: 20vw;
+    padding-right: 5vw;
+}
+
 .bio {
     display:flex;
+    flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     width: 40vw;
@@ -607,7 +625,6 @@ figure img {
     flex-direction: column;
     border-radius: 6px;
     box-sizing: border-box;
-    padding: 20px;
 }
 
 .about-container > h5 {
@@ -621,19 +638,25 @@ figure img {
 .about-container > p {
     font-size: 0.75rem;
     line-height: 1.5rem;
-    font-weight: regular;
     text-align: center;
     margin: 0;
 }
 
-/* Media query for mobile screens */
+/* Media query for smaller screens */
 @media (width < 1185px) {
     .flex-container {
         grid-template-columns: repeat(2, 300px);
         gap: 5rem;
+        margin-top: 10vh;
     }
     .about-container {
         min-width: 35vw;
+        min-height: 65vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .profile-img-container {
+        width: 25vw;
     }
 }
 
