@@ -44,7 +44,7 @@ button:hover {
 /* Parallax scrolling effect starts */
 .parallax {
     /* The image used */
-    background-image: url('/../assets/kessoku_background2.png');
+    background-image: url("../assets/kessoku_background2.png");
   
     /* Height */
     height: 50%;
